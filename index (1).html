@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LegacyWill.me — Not Just What You Leave. What You Stood For.</title>
+  <meta name="description" content="Document your beliefs, values, and life philosophy — and pass them on. LegacyWill.me helps you create a second will: not assets, but wisdom." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A5140'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%23B7E5BA'%3EL%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ======================== VIEW: LANDING ======================== -->
+  <div id="view-landing" class="view view--active">
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="/" class="nav__logo" data-link aria-label="LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          <div class="nav__logo-text">Legacy<span>Will</span></div>
+        </a>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#professionals">For Professionals</a></li>
+          <li><a href="/login" class="nav__cta" data-link>Get Started</a></li>
+        </ul>
+
+        <div class="nav__user" id="navUser">
+          <button class="nav__avatar" id="navAvatar" aria-label="User menu">
+            <span class="nav__avatar-initials" id="navAvatarInitials">AM</span>
+          </button>
+          <div class="nav__dropdown" id="navDropdown">
+            <a href="/settings" class="nav__dropdown-item" data-link>My Account</a>
+            <button class="nav__dropdown-item nav__dropdown-item--signout" id="navSignOut">Sign Out</button>
+          </div>
+        </div>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY — must be outside <nav> so backdrop-filter can't trap it -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-menu__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#professionals">For Professionals</a></li>
+        <li><a href="/login" data-link>Get Started →</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge glass reveal">
+            <span class="dot"></span>
+            Now in early access
+          </div>
+
+          <h1 class="hero__heading reveal reveal-delay-1">
+            Not just what you leave.<br /><em>What you stood for.</em>
+          </h1>
+
+          <p class="hero__sub reveal reveal-delay-2">
+            Document your beliefs, values, and life philosophy&nbsp;— and pass them on to the people who matter most.
+          </p>
+
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="/login" class="btn btn--primary" data-link>
+              Create Your Legacy Will
+              <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Floating Glass Card -->
+        <div class="hero__float-card glass">
+          <div class="hero__float-card__header">
+            <div class="hero__float-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B7E5BA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <div>
+              <div class="hero__float-card__title">Legacy Document</div>
+              <div class="hero__float-card__subtitle">Your personal record</div>
+            </div>
+          </div>
+          <div class="hero__float-card__item">
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></span>
+            Core values & beliefs
+          </div>
+          <div class="hero__float-card__item">
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></span>
+            Life lessons & regrets
+          </div>
+          <div class="hero__float-card__item">
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></span>
+            Philosophy & worldview
+          </div>
+          <div class="hero__float-card__item">
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg></span>
+            Letters to loved ones
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMOTIONAL PROBLEM -->
+    <section class="problem" id="problem">
+      <div class="container container--narrow">
+        <div class="problem__content">
+          <h2 class="problem__heading reveal">
+            Most people inherit wealth.<br /><em>Few inherit wisdom.</em>
+          </h2>
+          <p class="problem__text reveal reveal-delay-1">
+            We spend decades planning for what we leave behind financially. But the beliefs that shaped us, the lessons we learned, the principles we lived by&nbsp;— those vanish with us. Until now.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section__label reveal">
+          <span class="line"></span>
+          How we help
+        </div>
+        <h2 class="section__heading reveal">A guided path to<br />your deepest truths</h2>
+        <p class="section__sub reveal">
+          LegacyWill guides you through a reflective process to capture what matters most.
+        </p>
+
+        <div class="features__grid">
+          <div class="feature-card glass reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Guided Conversations</h3>
+            <p class="feature-card__text">Thoughtful prompts that draw out your deepest beliefs, values, and life philosophy in a natural, reflective flow.</p>
+          </div>
+
+          <div class="feature-card glass reveal reveal-delay-1">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            </div>
+            <h3 class="feature-card__title">Deep Questions</h3>
+            <p class="feature-card__text">Questions designed by philosophers and psychologists to unlock the wisdom you carry but rarely articulate.</p>
+          </div>
+
+          <div class="feature-card glass reveal reveal-delay-2">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Structured Output</h3>
+            <p class="feature-card__text">Your reflections are organized into a beautiful, shareable Legacy Will document — your personal philosophy, preserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section__label reveal">
+          <span class="line"></span>
+          The Process
+        </div>
+        <h2 class="section__heading reveal">Four steps to preserve<br />what matters most</h2>
+        <p class="section__sub reveal">
+          A simple, intentional process that turns reflection into legacy.
+        </p>
+
+        <div class="steps__grid">
+          <div class="step-card glass reveal">
+            <div class="step-card__number">01</div>
+            <div class="step-card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="step-card__title">Reflect</h3>
+            <p class="step-card__text">Pause and explore the values, beliefs, and experiences that made you who you are.</p>
+          </div>
+
+          <div class="step-card glass reveal reveal-delay-1">
+            <div class="step-card__number">02</div>
+            <div class="step-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="step-card__title">Record</h3>
+            <p class="step-card__text">Capture your thoughts through guided prompts — write, speak, or type at your own pace.</p>
+          </div>
+
+          <div class="step-card glass reveal reveal-delay-2">
+            <div class="step-card__number">03</div>
+            <div class="step-card__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="step-card__title">Structure</h3>
+            <p class="step-card__text">Your reflections are organized into a clear, meaningful document that tells your story.</p>
+          </div>
+
+          <div class="step-card glass reveal reveal-delay-3">
+            <div class="step-card__number">04</div>
+            <div class="step-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 class="step-card__title">Pass On</h3>
+            <p class="step-card__text">Share your Legacy Will with loved ones — now, or as part of your estate plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="experience__header">
+          <div class="section__label reveal"><span class="line"></span> The Experience</div>
+          <h2 class="section__heading reveal">A reflective space<br />designed for depth</h2>
+          <p class="section__sub reveal">A calm, focused interface that guides you through life's deepest questions.</p>
+        </div>
+
+        <div class="experience__mock reveal">
+          <div class="mock__window">
+            <div class="mock__toolbar">
+              <span class="mock__dot"></span>
+              <span class="mock__dot"></span>
+              <span class="mock__dot"></span>
+              <span class="mock__url">legacywill.me/reflect</span>
+            </div>
+
+            <div class="mock__body">
+              <div class="mock__sidebar">
+                <div class="mock__sidebar-title">Chapters</div>
+                <div class="mock__sidebar-item">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Origins
+                </div>
+                <div class="mock__sidebar-item active">
+                  <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                  Core Values
+                </div>
+                <div class="mock__sidebar-item">
+                  <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                  Beliefs
+                </div>
+                <div class="mock__sidebar-item">
+                  <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                  Life Lessons
+                </div>
+                <div class="mock__sidebar-item">
+                  <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                  Letters
+                </div>
+              </div>
+
+              <div class="mock__main">
+                <div class="mock__question-label">Core Values — Question 3 of 12</div>
+                <div class="mock__question">What principle have you never compromised on, even when it cost you?</div>
+                <div class="mock__answer-area">
+                  <span class="mock__answer-placeholder">Begin typing your reflection...</span>
+                  <span class="mock__answer-cursor"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mock__toolbar-bottom">
+              <div class="mock__progress">
+                <div class="mock__progress-bar"><div class="mock__progress-fill"></div></div>
+                35% complete
+              </div>
+              <button class="mock__save-btn">Save & Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMOTIONAL ANCHOR -->
+    <section class="anchor" id="anchor">
+      <div class="container container--narrow">
+        <div class="anchor__content">
+          <p class="anchor__quote reveal">
+            "I inherited his house.<br /><em>I never inherited his mind.</em>"
+          </p>
+          <div class="anchor__divider reveal reveal-delay-1"></div>
+          <p class="anchor__attribution reveal reveal-delay-2">— The unspoken regret of a generation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL -->
+    <section class="professional" id="professionals">
+      <div class="container">
+        <div class="professional__card glass reveal">
+          <div class="professional__badge">For Professionals</div>
+          <h2 class="professional__heading reveal reveal-delay-1">The missing piece in<br />estate planning</h2>
+          <p class="professional__text reveal reveal-delay-2">
+            Estate lawyers and financial planners: offer your clients a complete legacy — not just assets, but the values and wisdom that give those assets meaning.
+          </p>
+
+          <div class="professional__features reveal reveal-delay-2">
+            <div class="professional__feature"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg> White-label integration</div>
+            <div class="professional__feature"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg> Client-ready output</div>
+            <div class="professional__feature"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg> Secure & compliant</div>
+            <div class="professional__feature"><svg viewBox="0 0 24 24"><polyline points="20,6 9,17 4,12"/></svg> Dedicated support</div>
+          </div>
+
+          <a href="#" class="btn btn--primary reveal reveal-delay-3">
+            Partner with LegacyWill
+            <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="start">
+      <div class="container">
+        <div class="final-cta__content">
+          <div class="final-cta__glow"></div>
+          <h2 class="final-cta__heading reveal">Start your<br /><em>Legacy Will</em></h2>
+          <p class="final-cta__sub reveal reveal-delay-1">
+            The most important document you'll ever write isn't about your assets. It's about your truth.
+          </p>
+          <a href="/login" class="btn btn--primary reveal reveal-delay-2" data-link>
+            Begin Your Legacy
+            <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="/" class="footer__logo" data-link aria-label="LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          Legacy<span>Will</span>
+        </a>
+
+        <ul class="footer__links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2026 LegacyWill.me. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div><!-- /view-landing -->
+
+  <!-- ======================== VIEW: LOGIN ======================== -->
+  <div id="view-login" class="view">
+
+    <div class="login">
+
+      <!-- LEFT PANEL -->
+      <div class="login__left">
+        <div class="login__left-grid"></div>
+
+        <a href="/" class="login__logo" data-link aria-label="Back to LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          <span class="login__logo-text">Legacy<em>Will</em></span>
+        </a>
+
+        <div class="login__left-content">
+          <blockquote class="login__quote">
+            "The greatest inheritance you can leave is who you were."
+          </blockquote>
+          <p class="login__tagline">Document your values. Protect your legacy.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="login__right">
+        <div class="login__card">
+
+          <div class="login__card-brand">Legacy<em>Will</em></div>
+
+          <h1 class="login__heading">Sign in to LegacyWill</h1>
+          <p class="login__subheading">Welcome back. Your legacy awaits.</p>
+
+          <!-- Google Sign-in -->
+          <button type="button" class="login__google" id="googleSignIn">
+            <svg class="login__google-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Continue with Google
+          </button>
+
+          <!-- Divider -->
+          <div class="login__divider">
+            <span>or</span>
+          </div>
+
+          <!-- Login Form -->
+          <form class="login__form" id="loginForm" novalidate>
+            <div class="login__field">
+              <label for="loginEmail" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="loginEmail"
+                class="login__input"
+                placeholder="Email address"
+                required
+                autocomplete="email"
+                aria-describedby="emailError"
+              />
+              <span class="login__error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="login__field">
+              <label for="loginPassword" class="sr-only">Password</label>
+              <input
+                type="password"
+                id="loginPassword"
+                class="login__input"
+                placeholder="Password"
+                required
+                minlength="8"
+                autocomplete="current-password"
+                aria-describedby="passwordError"
+              />
+              <div class="login__field-meta">
+                <span class="login__error" id="passwordError" role="alert"></span>
+                <a href="/forgot-password" class="login__forgot" data-link>Forgot password?</a>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="login__submit"
+              id="loginSubmit"
+              aria-label="Sign in to LegacyWill"
+            >
+              <span class="login__submit-text">Sign In</span>
+              <span class="login__submit-spinner" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </span>
+            </button>
+          </form>
+
+          <p class="login__signup">
+            Don't have an account?
+            <a href="/signup" class="login__signup-link" data-link>Create one free →</a>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- /view-login -->
+
+  <!-- ======================== VIEW: SIGNUP ======================== -->
+  <div id="view-signup" class="view">
+    <div class="login">
+      <div class="login__left">
+        <div class="login__left-grid"></div>
+        <a href="/" class="login__logo" data-link aria-label="Back to LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          <span class="login__logo-text">Legacy<em>Will</em></span>
+        </a>
+        <div class="login__left-content">
+          <blockquote class="login__quote">"Every life has a philosophy worth preserving."</blockquote>
+        </div>
+      </div>
+      <div class="login__right">
+        <div class="login__card signup-card" id="signupCard">
+          <div class="login__card-brand">Legacy<em>Will</em></div>
+          <h1 class="login__heading">Create your account</h1>
+          <p class="login__subheading">Start preserving what matters most.</p>
+
+          <div id="signupFormWrap">
+            <form class="login__form" id="signupForm" novalidate>
+              <div class="login__field" id="signupNameWrap">
+                <label for="signupName" class="sr-only">Full name</label>
+                <input type="text" id="signupName" class="login__input" placeholder="Full name" required autocomplete="name" />
+                <span class="field-error" id="signupNameError" role="alert"></span>
+              </div>
+              <div class="login__field" id="signupEmailWrap">
+                <label for="signupEmail" class="sr-only">Email address</label>
+                <input type="email" id="signupEmail" class="login__input" placeholder="Email address" required autocomplete="email" />
+                <span class="field-error" id="signupEmailError" role="alert"></span>
+              </div>
+              <div class="login__field" id="signupPasswordWrap">
+                <label for="signupPassword" class="sr-only">Password</label>
+                <div class="input-toggle-wrap">
+                  <input type="password" id="signupPassword" class="login__input" placeholder="Password" required minlength="8" autocomplete="new-password" />
+                  <button type="button" class="password-toggle" data-target="signupPassword" aria-label="Show password">
+                    <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6558" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6558" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                  </button>
+                </div>
+                <span class="field-error" id="signupPasswordError" role="alert"></span>
+              </div>
+              <div class="login__field" id="signupConfirmWrap">
+                <label for="signupConfirm" class="sr-only">Confirm password</label>
+                <input type="password" id="signupConfirm" class="login__input" placeholder="Confirm password" required autocomplete="new-password" />
+                <span class="field-error" id="signupConfirmError" role="alert"></span>
+              </div>
+              <div class="login__field login__field--checkbox" id="signupTermsWrap">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="signupTerms" />
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">By creating an account you agree to our <a href="#" class="terms-link">Terms of Service</a></span>
+                </label>
+                <span class="field-error" id="signupTermsError" role="alert"></span>
+              </div>
+              <button type="submit" class="login__submit" id="signupSubmit">
+                <span class="login__submit-text">Create Account →</span>
+              </button>
+            </form>
+          </div>
+
+          <div id="signupSuccess" style="display:none; text-align:center; padding: 2rem 0;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B7E5BA" stroke-width="2.5" fill="none"/>
+              <polyline points="15,24 22,31 33,18" stroke="#B7E5BA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2 style="font-size:1.35rem; font-weight:700; color:#0A1A12; margin-top:1.25rem;">Check your email</h2>
+            <p style="font-size:0.9rem; color:#4A6558; margin-top:0.5rem;">We've sent a verification link to <strong id="signupEmailDisplay"></strong></p>
+            <p style="font-size:0.85rem; color:#4A6558; margin-top:1.5rem;">Wrong email? <a href="/signup" class="login__signup-link" data-link>Start over →</a></p>
+          </div>
+
+          <p class="login__signup" id="signupLoginLink">
+            Already have an account?
+            <a href="/login" class="login__signup-link" data-link>Sign in →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /view-signup -->
+
+  <!-- ======================== VIEW: FORGOT PASSWORD ======================== -->
+  <div id="view-forgot" class="view">
+    <div class="login">
+      <div class="login__left">
+        <div class="login__left-grid"></div>
+        <a href="/" class="login__logo" data-link aria-label="Back to LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          <span class="login__logo-text">Legacy<em>Will</em></span>
+        </a>
+        <div class="login__left-content">
+          <blockquote class="login__quote">"The things worth keeping deserve to be found."</blockquote>
+        </div>
+      </div>
+      <div class="login__right">
+        <div class="login__card" id="forgotCard">
+          <div class="login__card-brand">Legacy<em>Will</em></div>
+          <h1 class="login__heading">Reset your password</h1>
+          <p class="login__subheading">Enter your email and we'll send you a link.</p>
+
+          <div id="forgotFormWrap">
+            <form class="login__form" id="forgotForm" novalidate>
+              <div class="login__field" id="forgotEmailWrap">
+                <label for="forgotEmail" class="sr-only">Email address</label>
+                <input type="email" id="forgotEmail" class="login__input" placeholder="Email address" required autocomplete="email" />
+                <span class="field-error" id="forgotEmailError" role="alert"></span>
+              </div>
+              <button type="submit" class="login__submit" id="forgotSubmit">
+                <span class="login__submit-text">Send Reset Link</span>
+              </button>
+            </form>
+          </div>
+
+          <div id="forgotSuccess" style="display:none; text-align:center; padding: 2rem 0;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B7E5BA" stroke-width="2.5" fill="none"/>
+              <polyline points="15,24 22,31 33,18" stroke="#B7E5BA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2 style="font-size:1.35rem; font-weight:700; color:#0A1A12; margin-top:1.25rem;">Link sent</h2>
+            <p style="font-size:0.9rem; color:#4A6558; margin-top:0.5rem;">Check your inbox at <strong id="forgotEmailDisplay"></strong>. The link expires in 15 minutes.</p>
+          </div>
+
+          <p class="login__signup">
+            <a href="/login" class="login__signup-link" data-link>← Back to sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /view-forgot -->
+
+  <!-- ======================== VIEW: RESET PASSWORD ======================== -->
+  <div id="view-reset" class="view">
+    <div class="login">
+      <div class="login__left">
+        <div class="login__left-grid"></div>
+        <a href="/" class="login__logo" data-link aria-label="Back to LegacyWill.me home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+            <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+            <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+            <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+          </svg>
+          <span class="login__logo-text">Legacy<em>Will</em></span>
+        </a>
+        <div class="login__left-content">
+          <blockquote class="login__quote">"A new chapter begins with intention."</blockquote>
+        </div>
+      </div>
+      <div class="login__right">
+        <div class="login__card" id="resetCard">
+          <div class="login__card-brand">Legacy<em>Will</em></div>
+
+          <div id="resetExpiredState" style="display:none; text-align:center; padding: 2rem 0;">
+            <h2 style="font-size:1.35rem; font-weight:700; color:#0A1A12;">This link has expired</h2>
+            <p style="font-size:0.9rem; color:#4A6558; margin-top:0.5rem;">Reset links are valid for 15 minutes.</p>
+            <a href="/forgot-password" class="login__submit" data-link style="display:inline-flex; margin-top:1.5rem; text-decoration:none; width:100%; justify-content:center;">Request a new link</a>
+          </div>
+
+          <div id="resetFormWrap">
+            <h1 class="login__heading">Set new password</h1>
+            <p class="login__subheading">Choose a strong password for your account.</p>
+            <form class="login__form" id="resetForm" novalidate>
+              <div class="login__field" id="resetPasswordWrap">
+                <label for="resetPassword" class="sr-only">New password</label>
+                <div class="input-toggle-wrap">
+                  <input type="password" id="resetPassword" class="login__input" placeholder="New password" required minlength="8" autocomplete="new-password" />
+                  <button type="button" class="password-toggle" data-target="resetPassword" aria-label="Show password">
+                    <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6558" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A6558" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                  </button>
+                </div>
+                <span class="field-error" id="resetPasswordError" role="alert"></span>
+              </div>
+              <div class="login__field" id="resetConfirmWrap">
+                <label for="resetConfirm" class="sr-only">Confirm new password</label>
+                <input type="password" id="resetConfirm" class="login__input" placeholder="Confirm new password" required autocomplete="new-password" />
+                <span class="field-error" id="resetConfirmError" role="alert"></span>
+              </div>
+              <button type="submit" class="login__submit" id="resetSubmit">
+                <span class="login__submit-text">Set New Password</span>
+              </button>
+            </form>
+          </div>
+
+          <div id="resetSuccess" style="display:none; text-align:center; padding: 2rem 0;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#B7E5BA" stroke-width="2.5" fill="none"/>
+              <polyline points="15,24 22,31 33,18" stroke="#B7E5BA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2 style="font-size:1.35rem; font-weight:700; color:#0A1A12; margin-top:1.25rem;">Password updated</h2>
+            <p style="font-size:0.9rem; color:#4A6558; margin-top:0.5rem;">You can now sign in with your new password.</p>
+            <a href="/login" class="login__submit" data-link style="display:inline-flex; margin-top:1.5rem; text-decoration:none; width:100%; justify-content:center;">Sign In →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /view-reset -->
+
+  <!-- ======================== VIEW: DASHBOARD ======================== -->
+  <div id="view-dashboard" class="view">
+    <div class="dashboard__main">
+
+      <!-- HERO GREETING CARD -->
+      <div class="dashboard__hero-card glass">
+        <div class="dashboard__greeting-group">
+          <h1 class="dashboard__greeting" id="dashGreeting">Good morning, Arjun.</h1>
+          <p class="dashboard__greeting-sub">Your legacy awaits.</p>
+        </div>
+        <div class="dashboard__stats-row">
+          <div class="dashboard__stat-pill">
+            <span class="dashboard__stat-number" id="dashStatWills">2</span>
+            <span class="dashboard__stat-label">Wills</span>
+          </div>
+          <div class="dashboard__stat-pill">
+            <span class="dashboard__stat-number" id="dashStatComplete">18%</span>
+            <span class="dashboard__stat-label">Complete</span>
+          </div>
+          <div class="dashboard__stat-pill">
+            <span class="dashboard__stat-number" id="dashStatWords">847</span>
+            <span class="dashboard__stat-label">Words</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW WILL BUTTON -->
+      <button class="dashboard__new-btn" id="dashNewWillBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        Start New Legacy Will
+      </button>
+
+      <!-- SECTION LABEL -->
+      <div class="section__label dashboard__section-label">
+        <span class="line"></span>
+        Your Wills
+      </div>
+
+      <!-- WILLS GRID (filled by JS) -->
+      <div class="dashboard__wills-grid" id="dashWillsGrid"></div>
+
+    </div>
+
+    <!-- RENAME MODAL -->
+    <div class="lw-modal-overlay" id="renameModalOverlay" role="dialog" aria-modal="true" aria-labelledby="renameModalTitle" style="display:none;">
+      <div class="lw-modal">
+        <div class="lw-modal__header">
+          <h2 class="lw-modal__title" id="renameModalTitle">Rename Will</h2>
+          <button class="lw-modal__close" id="renameModalClose" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="lw-modal__body">
+          <label for="renameInput" class="lw-modal__label">Will title</label>
+          <input type="text" id="renameInput" class="lw-modal__input"
+            placeholder="Enter a title for this will" maxlength="80"
+            aria-describedby="renameHint" />
+          <p class="lw-modal__hint" id="renameHint">Keep it meaningful — this is how you'll identify this document.</p>
+        </div>
+        <div class="lw-modal__footer">
+          <button class="lw-modal__btn lw-modal__btn--cancel" id="renameModalCancel">Cancel</button>
+          <button class="lw-modal__btn lw-modal__btn--primary" id="renameModalSave">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELETE MODAL -->
+    <div class="lw-modal-overlay" id="deleteModalOverlay" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle" style="display:none;">
+      <div class="lw-modal lw-modal--danger">
+        <div class="lw-modal__header">
+          <h2 class="lw-modal__title" id="deleteModalTitle">Delete Will</h2>
+          <button class="lw-modal__close" id="deleteModalClose" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="lw-modal__body">
+          <div class="lw-modal__warning-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e06060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <p class="lw-modal__danger-text">
+            You are about to permanently delete
+            <strong id="deleteModalDocTitle" class="lw-modal__danger-name"></strong>.
+          </p>
+          <p class="lw-modal__danger-sub">
+            This will delete all your reflections and conversation history for this will.
+            <strong>This action cannot be undone.</strong>
+          </p>
+        </div>
+        <div class="lw-modal__footer">
+          <button class="lw-modal__btn lw-modal__btn--cancel" id="deleteModalCancel">Keep it</button>
+          <button class="lw-modal__btn lw-modal__btn--danger" id="deleteModalConfirm">Delete Will</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /view-dashboard -->
+
+  <!-- ======================== VIEW: WILL NEW ======================== -->
+  <div id="view-will-new" class="view">
+  <div class="convo">
+
+    <!-- ══════════════════════════════════════════════════
+         CONVERSATION BAR — fixed internal nav (not #nav)
+         ══════════════════════════════════════════════════ -->
+    <header class="convo__bar" role="banner">
+
+      <!-- Logo back link -->
+      <a href="/dashboard" class="convo__bar-logo" data-link aria-label="Exit to dashboard">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+          <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.8"/>
+          <rect x="8" y="10" width="24" height="22" rx="12" stroke="#B7E5BA" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <path d="M20 32 L20 22" stroke="#5CA87C" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="20" cy="21" rx="6" ry="5" fill="#288760" opacity="0.7"/>
+          <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.8"/>
+          <ellipse cx="20" cy="15.5" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+        </svg>
+      </a>
+
+      <!-- Editable document title -->
+      <div class="convo__bar-title-wrap">
+        <input
+          type="text"
+          class="convo__bar-title"
+          id="convoDocTitle"
+          value="My Legacy Will"
+          maxlength="80"
+          aria-label="Document title — click to rename"
+          spellcheck="false"
+        />
+      </div>
+
+      <!-- Right side: save status + exit -->
+      <div class="convo__bar-right">
+        <div class="convo__save-status" id="convoSaveStatus" aria-live="polite">
+          <svg class="convo__save-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20,6 9,17 4,12"/>
+          </svg>
+          <span class="convo__save-text">Saved</span>
+        </div>
+        <button class="convo__bar-exit" id="convoExitBtn" aria-label="Exit to dashboard">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════
+         THREE-COLUMN BODY
+         ══════════════════════════════════════════════════ -->
+    <div class="convo__body">
+
+      <!-- ── LEFT: MODULE SIDEBAR ──────────────────────── -->
+      <aside class="convo__sidebar" aria-label="Chapter navigation">
+
+        <p class="convo__sidebar-label">Chapters</p>
+
+        <nav class="convo__modules" id="convoModules" role="list">
+          <!-- Populated by renderConvoSidebar() -->
+        </nav>
+
+        <div class="convo__sidebar-footer">
+          <div class="convo__overall-row">
+            <span class="convo__overall-label" id="convoOverallPct">35%</span>
+            <span class="convo__overall-sub">complete</span>
+          </div>
+          <div class="convo__overall-track">
+            <div class="convo__overall-fill" id="convoOverallFill" style="width: 35%"></div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- ── CENTRE: CONVERSATION ───────────────────────── -->
+      <main class="convo__main" id="convoMain" role="main">
+
+        <!-- Module + question counter -->
+        <div class="convo__module-meta" id="convoModuleMeta">
+          <span class="convo__module-name" id="convoModuleName">Life Philosophy</span>
+          <span class="convo__module-counter" id="convoModuleCounter">Question 3 of 10</span>
+        </div>
+
+        <!-- The current question — Cormorant Garamond serif, large -->
+        <div class="convo__question-wrap">
+          <p class="convo__question" id="convoQuestion">
+            What does a good life look like to you — not a successful one, a good one?
+          </p>
+        </div>
+
+        <!-- Scrollable conversation history -->
+        <div class="convo__history" id="convoHistory" role="log" aria-label="Conversation history" aria-live="polite">
+          <!-- Populated by renderConvoHistory() -->
+        </div>
+
+        <!-- Streaming response area — visible while Claude is "typing" -->
+        <div class="convo__stream-wrap" id="convoStreamWrap" style="display:none;" aria-live="polite" aria-label="Claude is responding">
+          <div class="convo__stream-avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" width="16" height="16">
+              <ellipse cx="20" cy="10" rx="3" ry="3" fill="#B7E5BA" opacity="0.9"/>
+              <ellipse cx="20" cy="18" rx="4.5" ry="4" fill="#5CA87C" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="convo__stream-bubble">
+            <p class="convo__stream-text" id="convoStreamText"></p>
+            <span class="convo__stream-cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Input area -->
+        <div class="convo__input-area">
+          <div class="convo__input-shell" id="convoInputShell">
+            <textarea
+              class="convo__textarea"
+              id="convoTextarea"
+              placeholder="Share your thoughts here…"
+              rows="3"
+              maxlength="5000"
+              aria-label="Your response"
+              aria-describedby="convoInputHint"
+            ></textarea>
+            <div class="convo__input-foot">
+              <span class="convo__char-count" id="convoCharCount">0 / 5,000</span>
+              <button
+                class="convo__send-btn"
+                id="convoSendBtn"
+                aria-label="Send response"
+                disabled
+              >
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22,2 15,22 11,13 2,9"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <p class="convo__input-hint" id="convoInputHint">
+            Press <kbd>Ctrl</kbd><kbd>Enter</kbd> to send
+          </p>
+        </div>
+
+      </main>
+
+      <!-- ── RIGHT: LIVE DOCUMENT PREVIEW ──────────────── -->
+      <aside class="convo__preview" aria-label="Document preview">
+
+        <div class="convo__preview-head">
+          <span class="convo__preview-label">Document preview</span>
+          <button class="convo__preview-toggle" id="convoPreviewToggle" aria-label="Expand preview">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="convo__preview-body" id="convoPreviewBody">
+          <!-- Populated by renderConvoPreview() -->
+        </div>
+
+      </aside>
+
+    </div><!-- /convo__body -->
+
+    <!-- ══════════════════════════════════════════════════
+         EXIT CONFIRMATION MODAL
+         ══════════════════════════════════════════════════ -->
+    <div class="lw-modal-overlay" id="convoExitModal" role="dialog" aria-modal="true" aria-labelledby="convoExitModalTitle" style="display:none;">
+      <div class="lw-modal">
+        <div class="lw-modal__header">
+          <h2 class="lw-modal__title" id="convoExitModalTitle">Exit to dashboard?</h2>
+          <button class="lw-modal__close" id="convoExitModalClose" aria-label="Stay and keep writing">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="lw-modal__body">
+          <p class="lw-modal__danger-text" style="text-align:left; font-size: var(--fs-sm); color: var(--text-secondary);">
+            Your progress is saved. You can continue this conversation any time from your dashboard.
+          </p>
+        </div>
+        <div class="lw-modal__footer">
+          <button class="lw-modal__btn lw-modal__btn--cancel" id="convoExitStay">Keep writing</button>
+          <button class="lw-modal__btn lw-modal__btn--primary" id="convoExitConfirm">Go to dashboard</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         MODULE COMPLETE MODAL
+         ══════════════════════════════════════════════════ -->
+    <div class="lw-modal-overlay" id="convoModuleCompleteModal" role="dialog" aria-modal="true" aria-labelledby="moduleCompleteTitle" style="display:none;">
+      <div class="lw-modal">
+        <div class="lw-modal__header">
+          <h2 class="lw-modal__title" id="moduleCompleteTitle">Chapter complete</h2>
+        </div>
+        <div class="lw-modal__body" style="text-align:center; padding-top: 0.5rem;">
+          <div style="margin-bottom: 1.25rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B7E5BA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; margin: 0 auto;">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22,4 12,14.01 9,11.01"/>
+            </svg>
+          </div>
+          <p class="lw-modal__danger-text" style="text-align:center; font-size: var(--fs-base);">
+            You have completed <strong id="moduleCompleteModuleName" class="lw-modal__danger-name" style="color: var(--jade-light);"></strong>.
+          </p>
+          <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-top: 0.5rem;" id="moduleCompleteNextMsg"></p>
+        </div>
+        <div class="lw-modal__footer" style="justify-content: center;">
+          <button class="lw-modal__btn lw-modal__btn--primary" id="moduleCompleteNext">Continue →</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /convo -->
+  </div><!-- /view-will-new -->
+
+  <!-- ======================== VIEW: WILL ======================== -->
+  <div id="view-will" class="view">
+    <div class="placeholder-view">
+      <h1 class="placeholder-view__heading">Legacy Will</h1>
+      <p class="placeholder-view__sub">Loading will <span id="willIdDebug">…</span></p>
+      <div class="placeholder-view__actions">
+        <a href="/dashboard" class="placeholder-view__btn placeholder-view__btn--ghost" data-link>← Back to Dashboard</a>
+      </div>
+    </div>
+  </div><!-- /view-will -->
+
+  <!-- ======================== VIEW: SHARE ======================== -->
+  <div id="view-share" class="view">
+    <div class="placeholder-view">
+      <h1 class="placeholder-view__heading">Share Will</h1>
+      <p class="placeholder-view__sub">Share settings for will <span id="shareIdDebug">…</span></p>
+      <div class="placeholder-view__actions">
+        <a href="/dashboard" class="placeholder-view__btn placeholder-view__btn--ghost" data-link>← Back to Dashboard</a>
+      </div>
+    </div>
+  </div><!-- /view-share -->
+
+  <!-- ======================== VIEW: SETTINGS ======================== -->
+  <div id="view-settings" class="view">
+    <div class="placeholder-view">
+      <h1 class="placeholder-view__heading">Settings</h1>
+      <p class="placeholder-view__sub">Account settings and preferences.</p>
+      <div class="placeholder-view__actions">
+        <a href="/dashboard" class="placeholder-view__btn placeholder-view__btn--ghost" data-link>← Back to Dashboard</a>
+      </div>
+    </div>
+  </div><!-- /view-settings -->
+
+  <!-- ======================== VIEW: PREVIEW ======================== -->
+  <div id="view-preview" class="view">
+    <div class="placeholder-view">
+      <h1 class="placeholder-view__heading">Preview</h1>
+      <p class="placeholder-view__sub">Previewing with token <span id="previewTokenDebug">…</span></p>
+    </div>
+  </div><!-- /view-preview -->
+
+  <!-- ======================== VIEW: 404 ======================== -->
+  <div id="view-404" class="view">
+    <div class="not-found">
+      <div class="not-found__numeral">404</div>
+      <h1 class="not-found__heading">This page doesn't exist.</h1>
+      <p class="not-found__sub">The URL may have changed or the link may have expired.</p>
+      <a href="/" class="not-found__btn" data-link>← Back to Home</a>
+    </div>
+  </div><!-- /view-404 -->
+
+  <script src="app.js"></script>
+</body>
+</html>
